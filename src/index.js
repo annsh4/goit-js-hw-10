@@ -22,10 +22,10 @@ const fetchCountries = name => {
 
 searchBox.addEventListener('input', debounce(onInputSearch, DEBOUNCE_DELAY));
 
-function onInputSearch(e) {
-  e.preventDefault();
+function onInputSearch(evt) {
+  evt.preventDefault();
 
-  const searchCountries = e.target.value.trim();
+  const searchCountries = evt.target.value.trim();
 
   if (!searchCountries) {
     countriesList.style.visibility = 'hidden';
