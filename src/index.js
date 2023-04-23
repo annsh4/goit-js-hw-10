@@ -62,7 +62,7 @@ function renderedCountries(result) {
     countryCardMarkup(result);
   }
 
-  if (inputLetters > 1 && inputLetters <= 10) {
+  if (inputSymbols > 1 && inputSymbols <= 10) {
     countryInfo.innerHTML = '';
     countryInfo.style.visibility = 'hidden';
     countriesList.style.visibility = 'visible';
